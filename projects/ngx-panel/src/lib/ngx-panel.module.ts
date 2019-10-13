@@ -1,7 +1,5 @@
 import { NgModule } from '@angular/core';
-import { NgxPanelComponent } from './ngx-panel.component';
-
-
+import { NgxPanelComponent } from './components/ngx-panel.component';
 
 @NgModule({
   declarations: [NgxPanelComponent],
