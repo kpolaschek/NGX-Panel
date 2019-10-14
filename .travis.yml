@@ -23,3 +23,10 @@ deploy:
   local_dir: dist/ngx-panel-test
   on:
     branch: master
+
+notifications:
+  email:
+    recipients:
+    - kpolaschek@inconso.de
+    on_success: change
+    on_failure: always
