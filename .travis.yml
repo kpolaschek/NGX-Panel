@@ -12,6 +12,7 @@ before_script:
   - npm install -g @angular/cli
 
 script:
+- ng build ngx-panel
 - ng build ngx-panel-test --prod --base-href https://kpolaschek.github.io/NGX-Panel/
 
 deploy:
