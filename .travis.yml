@@ -12,13 +12,13 @@ before_script:
   - npm install -g @angular/cli
 
 script:
-- ng build ngx-panel
-- ng build ngx-panel-test --prod --base-href https://kpolaschek.github.io/NGX-Panel/
+  - ng build ngx-panel
+  - ng build ngx-panel-test --prod --base-href https://kpolaschek.github.io/NGX-Panel/
 
 deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-  keep_history: true
+  local_dir: dist/ngx-panel-test
   on:
     branch: master
