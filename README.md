@@ -1,6 +1,10 @@
 # NGX-Panel
 The [jsPanel](https://jspanel.de/) library for supporting floating panels comes to Angular.
 
+The master branch is automatically built and deployed through [Travis CI](https://travis-ci.com/kpolaschek/NGX-Panel/). A [live demo](https://kpolaschek.github.io/NGX-Panel/) of the current version is provided on [GitHub Pages](https://pages.github.com).
+
+***
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.6.
 
 ## Development server
