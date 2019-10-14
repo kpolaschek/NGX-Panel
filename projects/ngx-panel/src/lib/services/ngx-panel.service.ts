@@ -17,7 +17,7 @@ export class NgxPanelService {
   getDefaultOptions(): NgxPanelOptions {
     return {
       // container: 'app-root',
-      position: 'left-top 0 0'
+      // position: 'left-top 0 0'
     };
   }
 

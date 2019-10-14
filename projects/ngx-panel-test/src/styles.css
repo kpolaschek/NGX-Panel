@@ -1,2 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~jspanel4/dist/jspanel.min.css";
+@import "~highlight.js/styles/github.css";
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+.jsPanel-content {
+  padding: 10px;
+}
