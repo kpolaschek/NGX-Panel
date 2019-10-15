@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class FirstPanelComponent implements OnInit {
   title = 'First Panel';
   position = 'center';
+  radius = '10';
   htmlCode =
   `<ngx-panel title="First Panel">
   <form>
@@ -40,5 +41,9 @@ export class FirstPanelComponent implements OnInit {
 
   changePosition() {
     this.position = 'left-top 10 10';
+  }
+
+  changeRadius() {
+    this.radius = '1em 3em';
   }
 }

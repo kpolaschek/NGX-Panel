@@ -13,7 +13,8 @@ export class NgxPanelComponent implements OnInit, AfterViewInit, OnChanges {
   options: NgxPanelOptions;
   panel: NgxPanel;
 
-  @Input('title') title: string;
+  @Input('borderRadius') borderRadius: string;
+  @Input('headerTitle') headerTitle: string;
   @Input('position') position: string;
 
   constructor(private service: NgxPanelService) {
@@ -27,7 +28,8 @@ export class NgxPanelComponent implements OnInit, AfterViewInit, OnChanges {
   ngAfterViewInit(): void {
     const element = document.getElementById(this.id);
 
-    this.options.headerTitle = this.title;
+    this.options.borderRadius = isNaN(Number(this.borderRadius)) ? this.borderRadius : Number(this.borderRadius);
+    this.options.headerTitle = this.headerTitle;
     this.options.position = this.position;
     this.options.content = panel => {
       panel.content.append(element);

@@ -1,8 +1,9 @@
 <pre><code [highlight]="htmlCode"></code></pre>
 <button class="btn btn-outline-primary" (click)="changeTitle()">Change Title</button>
 <button class="btn btn-outline-primary" (click)="changePosition()">Change Position</button>
+<button class="btn btn-outline-primary" (click)="changeRadius()">Change Border Radius</button>
 
-<ngx-panel [title]="title" [position]="position">
+<ngx-panel [headerTitle]="title" [position]="position" [borderRadius]="radius">
   <form>
     <div class="form-group">
       <label for="exampleInputEmail1">Email address</label>
