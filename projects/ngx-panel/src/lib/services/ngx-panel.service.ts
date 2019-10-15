@@ -26,11 +26,15 @@ export class NgxPanelService {
   }
 
   changePanel(panel: NgxPanel, changes: SimpleChanges): void {
-    if (changes.title) {
-      panel.setHeaderTitle(changes.title.currentValue);
+    if (changes.headerTitle) {
+      panel.setHeaderTitle(changes.headerTitle.currentValue);
     }
     if (changes.position) {
       panel.reposition(changes.position.currentValue);
+    }
+    if (changes.borderRadius) {
+      const borderRadius = changes.borderRadius.currentValue;
+      panel.setBorderRadius(isNaN(Number(borderRadius)) ? borderRadius : Number(borderRadius));
     }
   }
 }

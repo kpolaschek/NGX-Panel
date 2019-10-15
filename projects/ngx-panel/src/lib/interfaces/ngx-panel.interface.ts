@@ -1,4 +1,5 @@
 export interface NgxPanel {
-  setHeaderTitle(title: string): NgxPanel;
   reposition(position: string): NgxPanel;
+  setBorderRadius(value: number | string): NgxPanel;
+  setHeaderTitle(title: string): NgxPanel;
 }
