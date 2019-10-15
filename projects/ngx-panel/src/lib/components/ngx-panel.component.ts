@@ -39,7 +39,6 @@ export class NgxPanelComponent implements OnInit, AfterViewInit, OnChanges {
   }
 
   ngOnChanges(changes: SimpleChanges) {
-    console.log(changes);
     if (this.panel) {
       this.service.changePanel(this.panel, changes);
     }

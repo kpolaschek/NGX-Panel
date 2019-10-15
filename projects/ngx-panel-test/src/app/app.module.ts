@@ -19,6 +19,9 @@ export function hljsLanguages() {
 }
 
 @NgModule({
+  entryComponents: [
+    FirstPanelComponent
+  ],
   declarations: [
     AppComponent,
     FirstPanelComponent
