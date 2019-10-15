@@ -1,6 +1,8 @@
 <pre><code [highlight]="htmlCode"></code></pre>
+<button class="btn btn-outline-primary" (click)="changeTitle()">Change Title</button>
+<button class="btn btn-outline-primary" (click)="changePosition()">Change Position</button>
 
-<ngx-panel title="First Panel">
+<ngx-panel [title]="title" [position]="position">
   <form>
     <div class="form-group">
       <label for="exampleInputEmail1">Email address</label>

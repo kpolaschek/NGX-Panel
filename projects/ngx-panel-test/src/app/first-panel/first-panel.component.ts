@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./first-panel.component.css']
 })
 export class FirstPanelComponent implements OnInit {
+  title = 'First Panel';
+  position = 'center';
   htmlCode =
   `<ngx-panel title="First Panel">
   <form>
@@ -30,5 +32,13 @@ export class FirstPanelComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  changeTitle() {
+    this.title = 'Changed Panel Title';
+  }
+
+  changePosition() {
+    this.position = 'left-top 10 10';
   }
 }
